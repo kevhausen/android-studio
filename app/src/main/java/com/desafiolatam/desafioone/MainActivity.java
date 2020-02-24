@@ -3,6 +3,7 @@ package com.desafiolatam.desafioone;
 import androidx.annotation.ContentView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,8 +32,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,getString(R.string.toast),Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this,RegistroUsuario.class);
+                startActivity(intent);
             }
         });
-
+        Button registar = findViewById(R.id.registrar);
+        registar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RegistroUsuario.class);
+                startActivity(intent);
+            }
+        });
     }
 }
