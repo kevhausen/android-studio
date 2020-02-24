@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
         ImageView caterpie = findViewById(R.id.caterpie);
 
 
-        Picasso.get().load("https://blog.desafiolatam.com/wp-content/uploads/2019/02/logo.png").into(caterpie);
+        //Picasso.get().load("https://blog.desafiolatam.com/wp-content/uploads/2019/02/logo.png").into(caterpie);
 
-        //Picasso.get().load("https://tecmoviles.com/wp-content/uploads/2016/09/evolucion-de-caterpie-todos-los-trucos-oruga-600x606.png").into(caterpie);
+        Picasso.get().load("https://tecmoviles.com/wp-content/uploads/2016/09/evolucion-de-caterpie-todos-los-trucos-oruga-600x606.png").into(caterpie);
         //Picasso.get().load("https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png".into(asd); metapod
 
         Button ingresar = findViewById(R.id.botoninicio);
