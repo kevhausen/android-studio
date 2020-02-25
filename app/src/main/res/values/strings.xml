@@ -5,4 +5,11 @@
     <string name="password">Contraseña</string>
     <string name="botoninicio">Ingresar</string>
     <string name="toast">Usuario ingresado con exito</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="edadtext">Edad</string>
+    <string name="welcome">Welcome Pokemon!</string>
+    <string name="mainvacio">Debe ingresar Usuario y Constraseña</string>
+    <string name="uservacia">Falta ingresar Usuario</string>
+    <string name="passvacia">Falta ingresar Contraseña</string>
 </resources>

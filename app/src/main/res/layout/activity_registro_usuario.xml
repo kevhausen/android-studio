@@ -10,23 +10,24 @@
         android:id="@+id/usuariom2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Usuario"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imagenregistro" />
 
     <EditText
         android:id="@+id/emailm2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Correo"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usuariom2" />
 
@@ -34,7 +35,6 @@
         android:id="@+id/passm2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
@@ -47,7 +47,6 @@
         android:id="@+id/confirmarpassm2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Confirmar contraseña"
         android:inputType="textPassword"
@@ -58,14 +57,61 @@
 
     <Spinner
         android:id="@+id/spinnerm2"
-        android:layout_width="87dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
         android:entries="@array/Edades"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/confirmarpassm2"
         tools:visibility="visible" />
+
+    <RadioGroup
+        android:layout_width="104dp"
+        android:layout_height="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmarpassm2">
+
+        <RadioButton
+            android:id="@+id/masculino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/masculino" />
+
+        <RadioButton
+            android:id="@+id/femenino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/femenino" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/edad_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/edadtext"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmarpassm2" />
+
+    <ImageView
+        android:id="@+id/imagenregistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
